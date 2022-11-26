@@ -54,8 +54,6 @@ class Circles {
 
 		this.y += this.dy;
 
-
-
 		if (position.x - this.x < this.ra && position.x - this.x > -this.ra && position.y - this.y < this.ra && position.y - this.y > -this.ra) {
 			this.y -= 10;
 		}
@@ -66,10 +64,10 @@ class Circles {
 
 let balls = [];
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 500; i++) {
 	let x = Math.random() * innerWidth;
 	let y = Math.random() * innerHeight;
-	let ra = 30;
+	let ra = Math.random() * 30;
 	let dy = Math.random() * 8;
 	let red = Math.random() * 255;
 	let green = Math.random() * 255;
